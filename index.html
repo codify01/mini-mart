@@ -13,7 +13,7 @@
             <h1 class="text-center my-3">Mini Mart</h1> 
             <div class="alert alert-danger text-center mx-auto p-1 fs-5" style="display: none;" id="error">Input an item</div>
             <input type="text" class="form-control form-control-sm shadow-none my-2" id="inp">
-            <button class="w-100 btn btn-outline-success my-2 btn-sm" onclick="addItems()">Submit</button>
+            <button class="w-100 btn btn-outline-success my-2 btn-sm" onclick="addItems()">Add to cart</button>
         </div>
        <div class="container mx-auto col-lg-7 col-10 shadow-sm">
         <div class="p-4 outline-success">
@@ -21,14 +21,16 @@
                 <thead>
                     <th width="7%" class="text-center">#</th>
                     <th>Name of Items</th>
+                    <!-- <th>Amount of Items</th> -->
                 </thead>
                 <tbody id="show">
                     <tr>
-                        <td colspan="2" class="text-center fw-bold fs-4">No item added yet</td>
+                        <td colspan="2" class="text-center fw-bold fs-4">Add something to your cart</td>
                     </tr>
                     
                 </tbody>
             </table>
+            <div class="fw-bold">You have <span id="cartNum">0</span> item(s) in your Cart</div>
         </div>
         <button class="btn btn-warning py-3 m-1" onclick="backSpace()">Delete from back</button>
         <button class="btn btn-warning py-3 m-1" onclick="frontSpace()">Delete from front</button>
