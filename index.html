@@ -25,20 +25,22 @@
                 </thead>
                 <tbody id="show">
                     <tr>
-                        <td colspan="2" class="text-center fw-bold fs-4">Add something to your cart</td>
+                        <td colspan="2" class="text-center fw-bold fs-5">Add something to your cart</td>
                     </tr>
                     
                 </tbody>
             </table>
             <div class="fw-bold">You have <span id="cartNum">0</span> item(s) in your Cart</div>
         </div>
-        <button class="btn btn-warning py-3 m-1" onclick="backSpace()">Delete from back</button>
-        <button class="btn btn-warning py-3 m-1" onclick="frontSpace()">Delete from front</button>
+       <div class="row">
+        <button class="btn btn-dark py-3 px-5 m-1 col-12" onclick="frontAdd()">Add to beginning</button>
+        <button class="btn btn-warning py-3 m-1 col" onclick="backSpace()">Delete from back</button>
+        <button class="btn btn-warning py-3 m-1 col" onclick="frontSpace()">Delete from front</button>
         <!-- <button class="btn btn-warning py-3 m-1" onclick="backAdd()">Add from back</button> -->
-        <button class="btn btn-dark py-3 px-5 m-1" onclick="frontAdd()">Add to beginning</button>
-        <button class="btn btn-success py-3 px-5 m-1" onclick="edit()">Edit</button>
-        <button class="btn btn-warning py-3 m-1" onclick="deleteAny()"> Delete Any</button>
-        <button class="btn btn-danger py-3 m-1" onclick="deleteAll()">Delete All</button>
+        <button class="btn btn-info py-3 px-5 m-1" onclick="edit()">Edit</button>
+        <button class="btn btn-warning py-3 m-1 col" onclick="deleteAny()"> Delete Any</button>
+        <button class="btn btn-danger py-3 m-1 col" onclick="deleteAll()">Delete All</button>
+       </div>
        </div>
       
 
